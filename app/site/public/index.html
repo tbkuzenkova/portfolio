@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html id="htmlTop" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title data-bind="text: labels.main.title"></title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/items.css">
+    <script src="/vendor/js/require.js" data-main="/js/startup"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="contacts">
+                <a href="order.html">
+                    <h1>HTML-верстка</h1>
+                    <h2>tbkuzenkova@gmail.com</h2>
+                </a>
+            </div>
+            <div class="top-menu">
+                <ul>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="#">Примеры работ</a></li>
+
+                    <li><button data-bind="click: language.bind(null, 'ru')">RU</button>
+                    </li>
+                    <li><button data-bind="click: language.bind(null, 'en')">EN</button>
+                    </li>
+
+                    <li><a href="order.html">Сделать заказ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="wrapper">
+            <div class="examples">
+                <div class="item">
+                    <img src="images/SurfHouse.png" alt="SurfHouse">
+                    <div class="links">
+                        <a href="images/SurfHouse.png" class="model" target="_blank">Макет</a>
+                        <a href="portfolio/SurfHouse/index.html" class="source">Верстка</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="Coming soon...">
+                    <div class="links">
+                        <a href="#" class="model" target="_blank">Макет</a>
+                        <a href="#" class="source" target="_blank">Верстка</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="Coming soon...">
+                    <div class="links">
+                        <a href="#" class="model" target="_blank">Макет</a>
+                        <a href="#" class="source" target="_blank">Верстка</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="Coming soon...">
+                    <div class="links">
+                        <a href="#" class="model" target="_blank">Макет</a>
+                        <a href="#" class="source" target="_blank">Верстка</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="" alt="Coming soon...">
+                    <div class="links">
+                        <a href="#" class="model" target="_blank">Макет</a>
+                        <a href="#" class="source" target="_blank">Верстка</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <b>Made by <a href="#">Shalaeva</a></b>
+        </div>
+    </footer>
+</body>
+
+</html>

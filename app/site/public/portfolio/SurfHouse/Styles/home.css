@@ -1,0 +1,125 @@
+.header {
+    height: 700px;
+}
+
+.main-page-header-social-icons {
+    background-color: transparent;
+}
+
+.welcome-text {
+    width: 220px;
+    height: 218px;
+    padding: 82px 25px 0 25px;
+    background-color: #fff51f;
+    margin: 200px 0 0 165px;
+    font-family: Raleway-Bold;
+    color: #333333;
+    font-size: 18px;
+    float: left;
+}
+
+.welcome-text h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.slide {
+    width: 320px;
+    height: 280px;
+    font-family: Myriad-Pro-Regular;
+    font-size: 18px;
+    color: #fff51f;
+    float: right;
+    margin: 183px 268px 0 0;
+}
+
+.slide h4 {
+    font-family: Raleway-Regular;
+    font-size: 48px;
+    line-height: 38px;
+}
+
+.buy-now {
+    text-transform: uppercase;
+    font-family: Raleway-Heavy;
+    font-size: 14px;
+    width: 70px;
+    height: 15px;
+    background-color: #fff51f;
+    display: block;
+    text-decoration: none;
+    margin-top: 54px;
+    padding: 20px 27px 14px 27px;
+    color: #000000;
+    min-width: 70px;
+}
+
+.main-page-menu {
+    position: relative;
+    top: -20px;
+}
+
+.new-products {
+    position: relative;
+    top: -20px;
+    background-color: inherit;
+}
+
+.sale-products, .top-products{
+    clear: both;
+    margin-top: 30px;
+}
+
+.main-page-brand {
+    width: 1170px;
+    clear: both;
+    position: relative;
+    top: 30px;
+    margin: 60px 165px 30px 165px;
+}
+
+.main-page-brand li {
+    margin: 70px 14px 64px 14px;
+}
+
+.main-page-brand li:first-child {
+    margin-left: 14px;
+}
+
+.main-page-brand li:last-child {
+    margin-right: 14px;
+}
+
+.instagram-feed {
+    clear: both;
+    width: 1170px;
+    height: 350px;
+    margin: 0 165px;
+    background-color: #eaeaea;
+    font-family: Roboto-Black-Italic;
+    font-size: 22px;
+    color: #333333;
+    text-align: center;
+}
+
+.instagram-nick {
+    padding-top: 54px;
+    padding-bottom: 26px;
+}
+
+.instagram-nick:before {
+    width: 28px;
+    height: 28px;
+    content: ".";
+    color: transparent;
+    display: inline-block;
+    background: url(../Images/insta-icn.png);
+}
+
+.instagram-nick span {
+    font-size: 18px;
+}
+
+.insta-images a {
+    padding-bottom: 60px;
+}
