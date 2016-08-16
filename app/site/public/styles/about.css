@@ -1,0 +1,12 @@
+.main-content {
+    text-indent: 15px;
+}
+
+.main-content p {
+    text-align: justify;
+}
+
+.skills {
+    list-style: circle;
+    margin-left: 30px;
+}

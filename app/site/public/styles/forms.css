@@ -1,0 +1,40 @@
+.make-order {
+    width: 750px;
+    margin: 0 25px;
+}
+
+.make-order input, textarea {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.make-order input {
+    height: 20px;
+}
+
+.make-order textarea {
+    height: 150px;
+}
+
+.make-order label {
+    width: 250px;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 14pt;
+}
+
+.message {
+    position: relative;
+    top: -75px;
+}
+
+fieldset {
+    border: none;
+    margin: 20px 0;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 20px;
+    margin: 0 325px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html id="htmlTop" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shalaeva - Сделать заказ</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/items.css">
+    <script src="/vendor/js/require.js" data-main="/js/startup"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="contacts">
+                <a href="#">
+                    <h1>HTML-верстка</h1>
+                    <h2>tbkuzenkova@gmail.com</h2>
+                </a>
+            </div>
+            <div class="top-menu">
+                <ul>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="index.html">Примеры работ</a></li>
+                    <li><a href="#">Сделать заказ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="wrapper">
+            <form action="post.php" class="make-order" enctype="multipart/form-data" method="post">
+                <fieldset>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <label for="model-file">Загрузите макет (.psd):</label>
+                    <input type="file" id="file" name="file">
+                </fieldset>
+                <fieldset>
+                    <label for="message" class="message">Ваше сообщение:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </fieldset>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <b>Made by <a href="index.html">Shalaeva</a></b>
+        </div>
+    </footer>
+</body>
+
+</html>
