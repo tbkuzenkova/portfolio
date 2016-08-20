@@ -20,15 +20,15 @@
             </div>
             <div class="top-menu">
                 <ul>
-                    <li><a href="about.html">Обо мне</a></li>
-                    <li><a href="#">Примеры работ</a></li>
+                    <li><a href="about.html" data-bind="text: labels.menu.about"></a></li>
+                    <li><a href="#" data-bind="text: labels.menu.examples"></a></li>
 
                     <li><button data-bind="click: language.bind(null, 'ru')">RU</button>
                     </li>
                     <li><button data-bind="click: language.bind(null, 'en')">EN</button>
                     </li>
 
-                    <li><a href="order.html">Сделать заказ</a></li>
+                    <li><a href="order.html" data-bind="text: labels.menu.makeOrder"></a></li>
                 </ul>
             </div>
         </div>

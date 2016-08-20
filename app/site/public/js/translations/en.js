@@ -13,6 +13,11 @@ define([
     return {
         main: {
             title: 'Shalaeva - Main page'
+        },
+        menu: {
+            about: 'About',
+            examples: 'Portfolio',
+            makeOrder: 'Make order'
         }
     };
 });

@@ -13,6 +13,11 @@ define([
     return {
         main: {
             title: 'Shalaeva - Главная страница'
+        },
+        menu: {
+            about: 'Обо мне',
+            examples: 'Примеры работ',
+            makeOrder: 'Сделать заказ'
         }
     };
 });
