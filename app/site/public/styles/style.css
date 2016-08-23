@@ -42,6 +42,10 @@ ul {
     display: none;
 }
 
+.language {
+    display: none;
+}
+
 .main-content {
     clear: both;
     box-sizing: border-box;

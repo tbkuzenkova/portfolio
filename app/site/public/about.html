@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Shalaeva&nbsp;&mdash; Обо мне</title>
+    <title data-bind="text: labels.about.title"></title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/items.css">
     <script src="/vendor/js/require.js" data-main="/js/startup"></script>
@@ -13,48 +13,22 @@
     <header>
         <div class="wrapper">
             <div class="contacts">
-                <a href="order.html">
-                    <h1>HTML-верстка</h1>
+                <a href="#">
+                    <h1 data-bind="text: labels.main.logo"></h1>
                     <h2>tbkuzenkova@gmail.com</h2>
                 </a>
             </div>
             <div class="top-menu">
                 <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="index.html">Примеры работ</a></li>
-                    <li><a href="order.html">Сделать заказ</a></li>
+                    <li><a href="#" data-bind="text: labels.menu.about"></a></li>
+                    <li><a href="index.html" data-bind="text: labels.menu.examples"></a></li>
+                    <li><a href="order.html" data-bind="text: labels.menu.makeOrder"></a></li>
                 </ul>
             </div>
         </div>
     </header>
     <div class="main-content">
-        <div class="wrapper">
-            <p>
-                Всем здравствуйте!
-            </p>
-            <p>
-                Меня зовут Татьяна Кузенкова, я&nbsp;начинающий верстальщик и&nbsp;мечтаю достичь мастерства в&nbsp;этом деле!
-            </p>
-            <p>
-                Как Вы&nbsp;могли заметить, в&nbsp;моём портфолио всего одна работа. Сейчас моей задачей является заполнить портфолио качественными, красивыми и&nbsp;удобными пользователю работами. Буду рада, если&nbsp;Вы мне поможете! :)
-            </p>
-            <p>
-                Немного обо мне: Я&nbsp;работаю в&nbsp;сфере IT&nbsp;4&nbsp;года и&nbsp;мне это очень нравится! Моими главными чертами характера можно назвать внимательность, трудолюбие, умение доводить дело до&nbsp;конца. Люблю осваивать новые технологии и&nbsp;применять
-                их&nbsp;на&nbsp;практике. Обучаться верстке начала на&nbsp;портале <a href="https://geekbrains.ru/users/654382">GeekBrains</a>. Моими ключевыми навыками на&nbsp;текущий момент являются:
-                <ul class="skills">
-                    <li>Свободное владение HTML и&nbsp;CSS, а&nbsp;также знания JavaScript</li>
-                    <li>HTML5 и&nbsp;CSS3</li>
-                    <li>Кроссбраузерная верстка</li>
-                    <li>Оптимизация под мобильные устройства</li>
-                    <li>Понимание основ юзабилити</li>
-                    <li>LESS</li>
-                    <li>MS Visual Studio, Brackets, Sublime Text, Notepad++</li>
-                    <li>Photoshop, GIMP (на&nbsp;уровне нарезки макета)</li>
-                    <li>Git, TFS, SVN</li>
-                    <li>Wordpress, Joomla</li>
-                    <li>JIRA, Redmine, YouTrack</li>
-                </ul>
-            </p>
+        <div class="wrapper" data-bind="html: resources.about.content" >            
         </div>
     </div>
     <footer>

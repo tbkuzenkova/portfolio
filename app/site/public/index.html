@@ -13,8 +13,8 @@
     <header>
         <div class="wrapper">
             <div class="contacts">
-                <a href="order.html">
-                    <h1>HTML-верстка</h1>
+                <a href="#">
+                    <h1 data-bind="text: labels.main.logo"></h1>
                     <h2>tbkuzenkova@gmail.com</h2>
                 </a>
             </div>
@@ -23,9 +23,9 @@
                     <li><a href="about.html" data-bind="text: labels.menu.about"></a></li>
                     <li><a href="#" data-bind="text: labels.menu.examples"></a></li>
 
-                    <li><button data-bind="click: language.bind(null, 'ru')">RU</button>
+                    <li class="language ru"><button data-bind="click: language.bind(null, 'ru')">RU</button>
                     </li>
-                    <li><button data-bind="click: language.bind(null, 'en')">EN</button>
+                    <li class="language en"><button data-bind="click: language.bind(null, 'en')">EN</button>
                     </li>
 
                     <li><a href="order.html" data-bind="text: labels.menu.makeOrder"></a></li>
@@ -39,36 +39,36 @@
                 <div class="item">
                     <img src="images/SurfHouse.png" alt="SurfHouse">
                     <div class="links">
-                        <a href="images/SurfHouse.png" class="model" target="_blank">Макет</a>
-                        <a href="portfolio/SurfHouse/index.html" class="source">Верстка</a>
+                        <a href="images/SurfHouse.png" class="model" target="_blank" data-bind="text: labels.main.model"></a>
+                        <a href="portfolio/SurfHouse/index.html" class="source" target="_blank" data-bind="text: labels.main.source"></a>
                     </div>
                 </div>
                 <div class="item">
                     <img src="" alt="Coming soon...">
                     <div class="links">
-                        <a href="#" class="model" target="_blank">Макет</a>
-                        <a href="#" class="source" target="_blank">Верстка</a>
+                        <a href="#" class="model" target="_blank" data-bind="text: labels.main.model"></a>
+                        <a href="#" class="source" target="_blank" data-bind="text: labels.main.source"></a>
                     </div>
                 </div>
                 <div class="item">
                     <img src="" alt="Coming soon...">
                     <div class="links">
-                        <a href="#" class="model" target="_blank">Макет</a>
-                        <a href="#" class="source" target="_blank">Верстка</a>
+                        <a href="#" class="model" target="_blank" data-bind="text: labels.main.model"></a>
+                        <a href="#" class="source" target="_blank" data-bind="text: labels.main.source"></a>
                     </div>
                 </div>
                 <div class="item">
                     <img src="" alt="Coming soon...">
                     <div class="links">
-                        <a href="#" class="model" target="_blank">Макет</a>
-                        <a href="#" class="source" target="_blank">Верстка</a>
+                        <a href="#" class="model" target="_blank" data-bind="text: labels.main.model"></a>
+                        <a href="#" class="source" target="_blank" data-bind="text: labels.main.source"></a>
                     </div>
                 </div>
                 <div class="item">
                     <img src="" alt="Coming soon...">
                     <div class="links">
-                        <a href="#" class="model" target="_blank">Макет</a>
-                        <a href="#" class="source" target="_blank">Верстка</a>
+                        <a href="#" class="model" target="_blank" data-bind="text: labels.main.model"></a>
+                        <a href="#" class="source" target="_blank" data-bind="text: labels.main.source"></a>
                     </div>
                 </div>
             </div>

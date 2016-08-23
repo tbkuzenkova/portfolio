@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Shalaeva - Сделать заказ</title>
+    <title data-bind="text: labels.order.title"></title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/items.css">
     <script src="/vendor/js/require.js" data-main="/js/startup"></script>
@@ -20,9 +20,13 @@
             </div>
             <div class="top-menu">
                 <ul>
-                    <li><a href="about.html">Обо мне</a></li>
-                    <li><a href="index.html">Примеры работ</a></li>
-                    <li><a href="#">Сделать заказ</a></li>
+                    <li><a href="about.html" data-bind="text: labels.menu.about"></a></li>
+                    <li><a href="index.html" data-bind="text: labels.menu.examples"></a></li>
+                    <li><button data-bind="click: language.bind(null, 'ru')">RU</button>
+                    </li>
+                    <li><button data-bind="click: language.bind(null, 'en')">EN</button>
+                    </li>
+                    <li><a href="#" data-bind="text: labels.menu.makeOrder"></a></li>
                 </ul>
             </div>
         </div>
@@ -31,18 +35,18 @@
         <div class="wrapper">
             <form action="post.php" class="make-order" enctype="multipart/form-data" method="post">
                 <fieldset>
-                    <label for="email">Email:</label>
+                    <label for="email" data-bind="text: labels.order.emailLabel"></label>
                     <input type="email" id="email" required>
                 </fieldset>
                 <fieldset>
-                    <label for="model-file">Загрузите макет (.psd):</label>
+                    <label for="model-file" data-bind="text: labels.order.fileUploadLabel"></label>
                     <input type="file" id="file" name="file">
                 </fieldset>
                 <fieldset>
-                    <label for="message" class="message">Ваше сообщение:</label>
+                    <label for="message" class="message" data-bind="text: labels.order.messageLabel"></label>
                     <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                 </fieldset>
-                <input type="submit" value="Отправить">
+                <input type="submit" data-bind="value: labels.order.submitLabel">
             </form>
         </div>
     </div>
