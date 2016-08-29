@@ -13,9 +13,9 @@ define([
     return {
         main: {
             title: 'Shalaeva - Main page',
-            logo: 'HTML-верстка',
-            model: 'Макет',
-            source: 'Верстка'
+            logo: 'HTML',
+            model: 'Model',
+            source: 'Layout'
         },
         menu: {
             about: 'About',
@@ -23,14 +23,14 @@ define([
             makeOrder: 'Make order'
         },
         about: {
-            title: 'Shalaeva - Обо мне'
+            title: 'Shalaeva - About me'
         },
         order: {
-            title: 'Shalaeva - Сделать заказ',
+            title: 'Shalaeva - Make order',
             emailLabel: 'Email:',
-            fileUploadLabel: 'Загрузите макет (.psd):',
-            messageLabel: 'Ваше сообщение:',
-            submitLabel: 'Отправить'
+            fileUploadLabel: 'Upload model-file (.psd):',
+            messageLabel: 'Your message:',
+            submitLabel: 'Send'
         }
     };
 });

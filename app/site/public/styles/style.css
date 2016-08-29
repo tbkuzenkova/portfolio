@@ -42,8 +42,25 @@ ul {
     display: none;
 }
 
-.language {
+.language-selector {
     display: none;
+    float: right;
+}
+
+.language-selector button {
+    width: 32px;
+    height: 32px;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+}
+
+.ru {
+    background: url("../images/icons/Russia.png");
+}
+
+.en {
+    background: url("../images/icons/United-States.png");
 }
 
 .main-content {

@@ -14,7 +14,7 @@ define([
         }
     };
     
-    require(['text!resources/ru/about.html'], function initialize(aboutContent) {
+    require(['text!resources/en/about.html'], function initialize(aboutContent) {
         model.about.content(aboutContent);
     });
     
