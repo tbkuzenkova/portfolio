@@ -39,7 +39,7 @@ ul {
 }
 
 .top-menu li:last-child {
-    display: none;
+    display: block;
 }
 
 .language-selector {
@@ -52,6 +52,10 @@ ul {
     color: transparent;
     background-color: transparent;
     border: none;
+}
+
+.language-selector button:hover {
+    cursor: pointer;
 }
 
 .ru {

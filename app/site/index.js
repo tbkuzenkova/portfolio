@@ -11,17 +11,31 @@ var app = express();
 
 app.use(webLogger('dev'));
 
-if (app.get('env') === 'development') {} else {
+if (app.get('env') === 'development') { } else {
     var compression = require('compression');
     var minify = require('express-minify');
     app.use(compression());
     app.use(minify({ cache: path.join(__dirname, 'cache') }));
 }
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/vendor', express.static(path.join(__dirname, 'vendor')));
+app.post('/api/order', function (req, res) {
+    var mailer = require('./mailer')();
+    var body = 'Email: ' + req.body.email + ' Message: ' + req.body.message;
+    mailer.sendEmail(__env.EMAIL_ADMIN, 'New order from Portfolio', body, function (error, info) {
+        if (error) {
+            console.error(error);
+        }
+        console.log('Message sent: ' + info.response);
+        res.redirect('/');
+    });
+});
 
-module.exports = function() {
+module.exports = function () {
     var debug = require('debug')('app:server');
     var http = require('http');
     var port = normalizePort(__env.PORT || '80');
