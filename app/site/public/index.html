@@ -18,16 +18,14 @@
                     <h2>tbkuzenkova@gmail.com</h2>
                 </a>
             </div>
+            <div class="language-selector">
+                <button class="ru" data-bind="click: language.bind(null, 'ru')"></button>
+                <button class="en" data-bind="click: language.bind(null, 'en')"></button>
+            </div>
             <div class="top-menu">
                 <ul>
                     <li><a href="about.html" data-bind="text: labels.menu.about"></a></li>
                     <li><a href="#" data-bind="text: labels.menu.examples"></a></li>
-
-                    <li class="language ru"><button data-bind="click: language.bind(null, 'ru')">RU</button>
-                    </li>
-                    <li class="language en"><button data-bind="click: language.bind(null, 'en')">EN</button>
-                    </li>
-
                     <li><a href="order.html" data-bind="text: labels.menu.makeOrder"></a></li>
                 </ul>
             </div>
