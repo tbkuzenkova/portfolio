@@ -3,8 +3,9 @@ define([
     'knockout',
     'amplify',
     'storage',
-    'responsejs'
-], function(_, ko, utils, storage, constants, amplify, responsejs) {
+    'responsejs',
+    'tools/menu.builder'
+], function(_, ko, utils, amplify, responsejs, menuBuilder) {
     var language = ko.observable((window.location.hash || '#ru').substring(1));
 
     language.subscribe(function(newVal) {
@@ -15,12 +16,14 @@ define([
     var model = {
         labels: {},        
         resources: {},
-        language: language
+        language: language,
+        menu: menuBuilder(language())
     };
 
     function initialize(labels, resources) {
         model.labels = labels;
         model.resources = resources;
+
         ko.applyBindings(model, document.getElementById("htmlTop"));
     }
 
