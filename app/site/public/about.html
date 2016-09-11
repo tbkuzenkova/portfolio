@@ -24,9 +24,9 @@
             </div>
             <div class="top-menu">
                 <ul>
-                    <li><a href="#" data-bind="text: labels.menu.about"></a></li>
-                    <li><a href="index.html" data-bind="text: labels.menu.examples"></a></li>
-                    <li><a href="order.html" data-bind="text: labels.menu.makeOrder"></a></li>
+                    <li><a data-bind="text: labels.menu.about, attr: {href: menu.about.link}"></a></li>
+                    <li><a data-bind="text: labels.menu.examples, attr: {href: menu.main.link}"></a></li>
+                    <li><a data-bind="text: labels.menu.makeOrder, attr: {href: menu.order.link}"></a></li>
                 </ul>
             </div>
         </div>

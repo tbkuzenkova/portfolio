@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title data-bind="text: labels.order.title"></title>
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/items.css">
+    <link rel="stylesheet" href="/styles/forms.css">
     <script src="/vendor/js/require.js" data-main="/js/startup"></script>
 </head>
 
@@ -14,7 +14,7 @@
         <div class="wrapper">
             <div class="contacts">
                 <a href="#">
-                    <h1>HTML-верстка</h1>
+                    <h1 data-bind="text: labels.main.logo"></h1>
                     <h2>tbkuzenkova@gmail.com</h2>
                 </a>
             </div>
@@ -24,28 +24,20 @@
             </div>
             <div class="top-menu">
                 <ul>
-                    <li><a href="about.html" data-bind="text: labels.menu.about"></a></li>
-                    <li><a href="index.html" data-bind="text: labels.menu.examples"></a></li>
-                    <li><button data-bind="click: language.bind(null, 'ru')">RU</button>
-                    </li>
-                    <li><button data-bind="click: language.bind(null, 'en')">EN</button>
-                    </li>
-                    <li><a href="#" data-bind="text: labels.menu.makeOrder"></a></li>
+                    <li><a data-bind="text: labels.menu.about, attr: {href: menu.about.link}"></a></li>
+                    <li><a data-bind="text: labels.menu.examples, attr: {href: menu.main.link}"></a></li>
+                    <li><a data-bind="text: labels.menu.makeOrder, attr: {href: menu.order.link}"></a></li>
                 </ul>
             </div>
         </div>
     </header>
     <div class="main-content">
         <div class="wrapper">
-            <form action="post.php" class="make-order" enctype="multipart/form-data" method="post">
+            <form action="/api/order" method="POST" class="make-order">
                 <fieldset>
                     <label for="email" data-bind="text: labels.order.emailLabel"></label>
-                    <input type="email" id="email" required>
-                </fieldset>
-                <fieldset>
-                    <label for="model-file" data-bind="text: labels.order.fileUploadLabel"></label>
-                    <input type="file" id="file" name="file">
-                </fieldset>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>   
                 <fieldset>
                     <label for="message" class="message" data-bind="text: labels.order.messageLabel"></label>
                     <textarea name="message" id="message" cols="30" rows="10" required></textarea>
