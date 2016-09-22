@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var webLogger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var lessMiddleware = require('less-middleware');
 var app = express();
 
 // uncomment after placing your favicon in /public
@@ -21,6 +22,8 @@ if (app.get('env') === 'development') { } else {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use(lessMiddleware(__dirname + '/public'));
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/vendor', express.static(path.join(__dirname, 'vendor')));
 app.post('/api/order', function (req, res) {
