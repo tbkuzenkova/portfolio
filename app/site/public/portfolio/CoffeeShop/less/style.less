@@ -23,7 +23,12 @@
 	src:url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf");
 }
 
-@width: 1280px;
+@font-face {
+    font-family: Miryad-Pro-Bold; /* Имя шрифта */
+    src: url(../fonts/MyriadProBold/MyriadProBold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@width: 1298px;
 
 @grey-font: #9d9c9d;
 
@@ -45,8 +50,9 @@ a {
 
 .wrapper {
     width: @width;
-    height: 100%;
     margin: 0 auto;
+    height: auto;
+    min-height: 100%;
 }
 
 .tooncharacters {
@@ -203,3 +209,79 @@ a {
 .grey-eclipse {
     background: url("../images/loader-grey.png");
 }
+
+.footer {
+    height: 318px;
+    margin-top: -318px; 
+    width: @width;
+    margin: 0 auto;
+}
+
+.footer-content {
+    height: 227px;
+    background: url("../images/footer-bg.jpg");
+    background-repeat: repeat;
+}
+
+.footer-block {
+    float: left;
+    color: #ffffff;
+}
+
+.footer-block:first-child h1{
+    margin: 40px 0 20px 110px; 
+}
+
+.footer-block h1 {
+    font-family: Miryad-Pro-Bold;
+    font-size: 16px;
+    margin: 40px 0 20px 90px;
+}
+
+.footer-block:first-child p {
+    margin-left: 113px;
+}
+
+.footer-block:nth-child(2) p {
+    font-family: Myriad-Pro-SemiBoldIt;
+}
+
+.footer-block p {
+    font-size: 12px;
+    font-family: Myriad-Pro-Regular;
+    line-height: 24px;
+    margin-left: 93px; 
+}
+
+.social-icons {
+    margin-left: 90px; 
+}
+
+.social-icons img {
+    margin-right: 12px;
+}
+
+.top-arrow {
+    width: 14px;
+    height: 7px;
+    border: solid 1px #795e4e;
+    content: url(../images/top-arrow.png);
+    padding: 11.5px 8px;
+    border-radius: 50%; 
+    margin-top: 32px;
+}
+
+.designed-by {
+    font-family: Myriad-Pro-SemiBoldIt;
+    font-size: 12px;
+    color: #666666;
+    margin: 29px 370px 0 122px;
+    float: left;
+}
+
+.clearfix:after {content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
