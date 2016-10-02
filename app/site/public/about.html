@@ -10,36 +10,38 @@
 </head>
 
 <body>
+    <div class="content">
     <header>
         <div class="wrapper">
-            <div class="contacts">
+            <div class="logo">
                 <a href="#">
-                    <h1 data-bind="text: labels.main.logo"></h1>
-                    <h2>tbkuzenkova@gmail.com</h2>
+                    <img src="images/logo.png" alt="Logo">
                 </a>
             </div>
             <div class="language-selector">
-                <button class="ru" data-bind="click: language.bind(null, 'ru')">RU</button>
-                <button class="en" data-bind="click: language.bind(null, 'en')">EN</button>
+                <button class="ru" data-bind="click: language.bind(null, 'ru')"></button>
+                <button class="en" data-bind="click: language.bind(null, 'en')"></button>
             </div>
             <div class="top-menu">
                 <ul>
-                    <li><a data-bind="text: labels.menu.about, attr: {href: menu.about.link}"></a></li>
-                    <li><a data-bind="text: labels.menu.examples, attr: {href: menu.main.link}"></a></li>
-                    <li><a data-bind="text: labels.menu.makeOrder, attr: {href: menu.order.link}"></a></li>
+                    <li class="about"><a data-bind="text: labels.menu.about, attr: {href: menu.about.link}"></a></li>
+                    <li class="portfolio"><a data-bind="text: labels.menu.examples, attr: {href: menu.main.link}"></a></li>
+                    <li class="order"><a data-bind="text: labels.menu.makeOrder, attr: {href: menu.order.link}"></a></li>
                 </ul>
             </div>
         </div>
     </header>
     <div class="main-content">
-        <div class="wrapper" data-bind="html: resources.about.content" >            
+        <img src="images/portrait.jpg" alt="Tatiana Kuzenkova" class="portrait">
+        <div class="wrapper about-text" data-bind="html: resources.about.content">            
         </div>
     </div>
     <footer>
         <div class="wrapper">
-            <b>Made by&nbsp;<a href="index.html">Shalaeva</a></b>
+            <span>Made by <img src="images/shalaeva.png" alt="Shalaeva"> &copy;</span>
         </div>
     </footer>
+    </div>
 </body>
 
 </html>

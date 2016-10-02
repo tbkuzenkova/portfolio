@@ -12,21 +12,20 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="contacts">
+            <div class="logo">
                 <a href="#">
-                    <h1 data-bind="text: labels.main.logo"></h1>
-                    <h2>tbkuzenkova@gmail.com</h2>
+                    <img src="images/logo.png" alt="Logo">
                 </a>
             </div>
             <div class="language-selector">
-                <button class="ru" data-bind="click: language.bind(null, 'ru')">RU</button>
-                <button class="en" data-bind="click: language.bind(null, 'en')">EN</button>
+                <button class="ru" data-bind="click: language.bind(null, 'ru')"></button>
+                <button class="en" data-bind="click: language.bind(null, 'en')"></button>
             </div>
             <div class="top-menu">
                 <ul>
-                    <li><a data-bind="text: labels.menu.about, attr: {href: menu.about.link}"></a></li>
-                    <li><a data-bind="text: labels.menu.examples, attr: {href: menu.main.link}"></a></li>
-                    <li><a data-bind="text: labels.menu.makeOrder, attr: {href: menu.order.link}"></a></li>
+                    <li class="about"><a data-bind="text: labels.menu.about, attr: {href: menu.about.link}"></a></li>
+                    <li class="portfolio"><a data-bind="text: labels.menu.examples, attr: {href: menu.main.link}"></a></li>
+                    <li class="order"><a data-bind="text: labels.menu.makeOrder, attr: {href: menu.order.link}"></a></li>
                 </ul>
             </div>
         </div>
@@ -34,6 +33,7 @@
     <div class="main-content">
         <div class="wrapper">
             <form action="/api/order" method="POST" class="make-order">
+                <h1 class="order-message" data-bind="text: labels.order.makelabel"></h1>
                 <fieldset>
                     <label for="email" data-bind="text: labels.order.emailLabel"></label>
                     <input type="email" id="email" name="email" required>
@@ -48,7 +48,7 @@
     </div>
     <footer>
         <div class="wrapper">
-            <b>Made by <a href="index.html">Shalaeva</a></b>
+            <span>Made by <img src="images/shalaeva.png" alt="Shalaeva"> &copy;</span>
         </div>
     </footer>
 </body>
