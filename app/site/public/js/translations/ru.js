@@ -24,7 +24,8 @@ define([
             emailLabel: 'Email:',
             fileUploadLabel: 'Загрузите макет (.psd):',
             messageLabel: 'Ваше сообщение:',
-            submitLabel: 'Отправить'
+            submitLabel: 'Отправить',
+            makelabel: 'Пожалуйста, напишите мне детали работы. Я отвечу вам в ближайшее время. Спасибо!'
         }
     };
     

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Arciform-Regular; /* Имя шрифта */
+    src: url(../fonts/arciformRegular.otf); /* Путь к файлу со шрифтом */
+}
+
 @width: 960px;
 @prime-color: #3e8c96;
 @second-color: #d9d7ca;
@@ -16,6 +21,7 @@
 html, body {
      height: 100%;
      color: @text-color;
+     font-family: Arciform-Regular;
 }
 
 body {
@@ -27,6 +33,7 @@ body {
 
 .main-content {
   flex: 1 0 auto;
+  padding-bottom: 50px; 
 }
 
 header {

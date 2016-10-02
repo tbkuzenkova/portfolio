@@ -30,7 +30,8 @@ define([
             emailLabel: 'Email:',
             fileUploadLabel: 'Upload model-file (.psd):',
             messageLabel: 'Your message:',
-            submitLabel: 'Send'
+            submitLabel: 'Send',
+            makelabel: "Please send me email with job description. I will answer you as soon as possible. Thank you!"
         }
     };
 });

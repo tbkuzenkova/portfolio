@@ -33,6 +33,7 @@
     <div class="main-content">
         <div class="wrapper">
             <form action="/api/order" method="POST" class="make-order">
+                <h1 class="order-message" data-bind="text: labels.order.makelabel"></h1>
                 <fieldset>
                     <label for="email" data-bind="text: labels.order.emailLabel"></label>
                     <input type="email" id="email" name="email" required>
@@ -47,7 +48,7 @@
     </div>
     <footer>
         <div class="wrapper">
-            <b>Made by <a href="index.html">Shalaeva</a></b>
+            <span>Made by <img src="images/shalaeva.png" alt="Shalaeva"> &copy;</span>
         </div>
     </footer>
 </body>
